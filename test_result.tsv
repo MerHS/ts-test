@@ -1,0 +1,14 @@
+['__name__', '__doc__', '__package__', '__loader__', '__spec__', '__file__', '__cached__', '__builtins__', 'add', 'add_', 'sub', 'sub_', 'mul', 'mul_', 'div', 'div_', 'add_distl', 'add_distr', 'add_dist_comm', 'mm', 'addmm', 'mmmul', 'mulmm', 'addmul', 'muladd', 'muldiv', 'divmul', 'addmul_', 'muladd_', 'muldiv_', 'divmul_', 'muldivaba', 'muldivabb', 'divmulabb', 'addsubabb', 'addsubaba', 'subaddabb']
+ 3.69848	add
+ 2.61611	add_
+ 3.70177	sub
+ 2.59257	sub_
+ 3.67381	mul
+ 2.57579	mul_
+ 3.65168	div
+ 2.58167	div_
+31.09413	add_distl
+31.85952	add_distr
+ 1.60607	add_dist_comm
+11.81944	mm
+27.44967	addmm

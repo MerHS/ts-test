@@ -1,0 +1,62 @@
+['__name__', '__doc__', '__package__', '__loader__', '__spec__', '__file__', '__cached__', '__builtins__', 'add', 'add_', 'sub', 'sub_', 'mul', 'mul_', 'div', 'div_', 'add_distl', 'add_distr', 'add_dist_comm', 'x_mm', 'x_addmm', 'x_mmmul', 'x_mulmm', 'addmul', 'muladd', 'muldiv', 'divmul', 'addmul_', 'muladd_', 'muldiv_', 'divmul_', 'muldivabb', 'divmulabb', 'addsubabb', 'subaddabb']
+ 7.46049	add
+ 3.93762	add_
+ 7.57593	sub
+ 3.91582	sub_
+ 8.29861	mul
+ 3.94338	mul_
+ 9.02106	div
+ 3.93931	div_
+18.98112	add_distl
+14.63906	add_distr
+16.33181	add_dist_comm
+ 8.53513	x_mm
+20.69853	x_addmm
+ 6.44281	x_mmmul
+ 8.58124	x_mulmm
+13.92011	addmul
+16.92080	muladd
+13.86759	muldiv
+14.07576	divmul
+ 7.75845	addmul_
+ 7.63774	muladd_
+ 7.81398	muldiv_
+ 7.85877	divmul_
+17.17230	muldivabb
+11.25575	divmulabb
+17.56235	addsubabb
+16.84883	subaddabb
+['__name__', '__doc__', '__package__', '__loader__', '__spec__', '__file__', '__cached__', '__builtins__', 'add', 'add_', 'sub', 'sub_', 'mul', 'mul_', 'div', 'div_', 'add_distl', 'add_distr', 'add_dist_comm', 'x_mm', 'x_addmm', 'x_mmmul', 'x_mulmm', 'addmul', 'muladd', 'muldiv', 'divmul', 'addmul_', 'muladd_', 'muldiv_', 'divmul_', 'muldivabb', 'divmulabb', 'addsubabb', 'subaddabb']
+14.90292	add
+ 6.04227	add_
+22.32038	sub
+ 5.64656	sub_
+25.74230	mul
+ 5.76100	mul_
+35.23761	div
+10.35981	div_
+21.03874	add_distl
+18.06616	add_distr
+21.36366	add_dist_comm
+ 8.52711	x_mm
+ 5.21135	x_addmm
+ 5.24020	x_mmmul
+ 5.07317	x_mulmm
+20.33558	addmul
+25.98727	muladd
+23.23601	muldiv
+31.92523	divmul
+ 7.13604	addmul_
+ 7.25809	muladd_
+ 7.14990	muldiv_
+ 6.10863	divmul_
+16.37656	muldivabb
+15.99053	divmulabb
+28.71640	addsubabb
+25.99902	subaddabb
+['__name__', '__doc__', '__package__', '__loader__', '__spec__', '__file__', '__cached__', '__builtins__', 'add', 'add_', 'sub', 'sub_', 'mul', 'mul_', 'div', 'div_', 'add_distl', 'add_distr', 'add_dist_comm', 'x_mm', 'x_addmm', 'x_mmmul', 'x_mulmm', 'addmul', 'muladd', 'muldiv', 'divmul', 'addmul_', 'muladd_', 'muldiv_', 'divmul_', 'muldivabb', 'divmulabb', 'addsubabb', 'subaddabb']
+23.46156	add
+ 6.18354	add_
+21.11098	sub
+ 7.91043	sub_
+32.16800	mul

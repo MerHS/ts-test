@@ -1,5 +1,6 @@
 import torch
 import argparse
+from tester import test_fn, test_fn_inplace
 from simple import hw_fns as fns
 from inspect import signature
 
@@ -23,7 +24,6 @@ cuda = False
 torch._C._jit_set_texpr_fuser_enabled(False)
 
 if args.cuda:
-    iter_n *= 5
     cuda = True
     if not torch.cuda.is_available():
         print("UNSUPPORTED: CUDA is not available")
@@ -39,7 +39,7 @@ if args.nvfuse:
 device = "cuda" if args.cuda else "cpu"
 
 tensor_pool = list()
-len_list = [80, 160, 320, 640, 1280, 2560]
+len_list = [80, 160, 320, 640, 1280]
 for height in len_list:
     for width in len_list:
         size = [height, width]
@@ -51,11 +51,10 @@ print(args)
 
 def run_test():
     for fn_name in fns.__dict__.keys():
+        if fn_name.startswith("_") or fn_name == "torch":
+            continue
         print(fn_name)
         for (hw, tensors) in tensor_pool:
-            if fn_name.startswith("_") or fn_name == "torch":
-                continue
-
             fn = fns.__dict__[fn_name]
             fn_sig = signature(fn)
             param_len = len(fn_sig.parameters)

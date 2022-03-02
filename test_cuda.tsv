@@ -1,0 +1,210 @@
+['__name__', '__doc__', '__package__', '__loader__', '__spec__', '__file__', '__cached__', '__builtins__', 'add', 'add_', 'sub', 'sub_', 'mul', 'mul_', 'div', 'div_', 'add_distl', 'add_distr', 'add_dist_comm', 'mm', 'addmm', 'mmmul', 'mulmm', 'addmul', 'muladd', 'muldiv', 'divmul', 'addmul_', 'muladd_', 'muldiv_', 'divmul_', 'muldivaba', 'muldivabb', 'divmulabb', 'addsubabb', 'addsubaba', 'subaddabb']
+ 4.98096	add
+ 4.98034	add_
+ 4.99818	sub
+ 4.97923	sub_
+ 5.00081	mul
+ 4.97827	mul_
+ 5.04021	div
+ 5.08322	div_
+15.02105	add_distl
+15.03267	add_distr
+ 0.75158	add_dist_comm
+ 1.79604	mm
+ 2.06167	addmm
+ 2.06049	mmmul
+ 2.06868	mulmm
+10.02091	addmul
+10.02281	muladd
+10.06385	muldiv
+10.06604	divmul
+ 9.99914	addmul_
+ 9.99967	muladd_
+10.20800	muldiv_
+10.21376	divmul_
+10.06390	muldivaba
+10.06394	muldivabb
+10.06677	divmulabb
+10.02813	addsubabb
+10.02725	addsubaba
+10.02975	subaddabb
+['__name__', '__doc__', '__package__', '__loader__', '__spec__', '__file__', '__cached__', '__builtins__', 'add', 'add_', 'sub', 'sub_', 'mul', 'mul_', 'div', 'div_', 'add_distl', 'add_distr', 'add_dist_comm', 'mm', 'addmm', 'mmmul', 'mulmm', 'addmul', 'muladd', 'muldiv', 'divmul', 'addmul_', 'muladd_', 'muldiv_', 'divmul_', 'muldivaba', 'muldivabb', 'divmulabb', 'addsubabb', 'addsubaba', 'subaddabb']
+ 5.02282	add
+ 4.97762	add_
+ 5.17458	sub
+ 4.97644	sub_
+ 5.20799	mul
+ 4.96934	mul_
+ 5.04096	div
+ 5.07893	div_
+ 6.51102	add_distl
+ 6.51029	add_distr
+ 0.30171	add_dist_comm
+ 1.81269	mm
+ 2.08256	addmm
+ 2.08368	mmmul
+ 2.08326	mulmm
+ 6.50908	addmul
+ 6.49815	muladd
+ 6.54227	muldiv
+ 6.54249	divmul
+10.00345	addmul_
+10.00213	muladd_
+10.20929	muldiv_
+10.21491	divmul_
+ 5.07756	muldivaba
+ 5.07849	muldivabb
+ 5.08051	divmulabb
+ 5.04361	addsubabb
+ 5.04117	addsubaba
+ 5.04315	subaddabb
+['__name__', '__doc__', '__package__', '__loader__', '__spec__', '__file__', '__cached__', '__builtins__', 'add', 'add_', 'sub', 'sub_', 'mul', 'mul_', 'div', 'div_', 'add_distl', 'add_distr', 'add_dist_comm', 'mm', 'addmm', 'mmmul', 'mulmm', 'addmul', 'muladd', 'muldiv', 'divmul', 'addmul_', 'muladd_', 'muldiv_', 'divmul_', 'muldivaba', 'muldivabb', 'divmulabb', 'addsubabb', 'addsubaba', 'subaddabb']
+ 5.14671	add
+ 4.97425	add_
+ 4.99651	sub
+ 4.97462	sub_
+ 4.99561	mul
+ 4.96769	mul_
+ 5.03464	div
+ 5.07556	div_
+ 6.54003	add_distl
+ 6.54186	add_distr
+ 0.30415	add_dist_comm
+ 1.79921	mm
+ 2.06704	addmm
+ 2.06905	mmmul
+ 2.07989	mulmm
+ 6.54381	addmul
+ 6.53909	muladd
+ 6.55158	muldiv
+ 6.55738	divmul
+10.00107	addmul_
+10.00115	muladd_
+10.20956	muldiv_
+10.21443	divmul_
+ 5.22919	muldivaba
+ 5.22748	muldivabb
+ 5.22715	divmulabb
+ 5.21954	addsubabb
+ 5.21887	addsubaba
+ 5.22010	subaddabb
+['__name__', '__doc__', '__package__', '__loader__', '__spec__', '__file__', '__cached__', '__builtins__', 'add', 'add_', 'sub', 'sub_', 'mul', 'mul_', 'div', 'div_', 'add_distl', 'add_distr', 'add_dist_comm', 'mm', 'addmm', 'mmmul', 'mulmm', 'addmul', 'muladd', 'muldiv', 'divmul', 'addmul_', 'muladd_', 'muldiv_', 'divmul_', 'muldivaba', 'muldivabb', 'divmulabb', 'addsubabb', 'addsubaba', 'subaddabb']
+ 5.80299	add
+ 4.97248	add_
+ 5.88303	sub
+ 4.97046	sub_
+ 5.71335	mul
+ 4.96402	mul_
+ 5.69500	div
+ 5.07195	div_
+ 6.50304	add_distl
+ 6.50392	add_distr
+ 0.29997	add_dist_comm
+ 1.80459	mm
+ 2.07843	addmm
+ 2.07865	mmmul
+ 2.07994	mulmm
+ 6.50147	addmul
+ 6.49528	muladd
+ 6.53702	muldiv
+ 6.53795	divmul
+10.00069	addmul_
+10.00021	muladd_
+10.20903	muldiv_
+10.21461	divmul_
+ 5.32665	muldivaba
+ 5.40922	muldivabb
+ 5.34689	divmulabb
+ 5.11124	addsubabb
+ 5.46543	addsubaba
+ 5.42294	subaddabb
+['__name__', '__doc__', '__package__', '__loader__', '__spec__', '__file__', '__cached__', '__builtins__', 'add', 'add_', 'sub', 'sub_', 'mul', 'mul_', 'div', 'div_', 'add_distl', 'add_distr', 'add_dist_comm', 'mm', 'addmm', 'mmmul', 'mulmm', 'addmul', 'muladd', 'muldiv', 'divmul', 'addmul_', 'muladd_', 'muldiv_', 'divmul_', 'muldivaba', 'muldivabb', 'divmulabb', 'addsubabb', 'addsubaba', 'subaddabb']
+ 5.19407	add
+ 4.97447	add_
+ 5.22248	sub
+ 4.97407	sub_
+ 4.99595	mul
+ 4.96704	mul_
+ 5.09947	div
+ 5.07488	div_
+ 6.54134	add_distl
+ 6.54205	add_distr
+ 0.30330	add_dist_comm
+ 1.80774	mm
+ 2.07980	addmm
+ 2.07886	mmmul
+ 2.08303	mulmm
+ 6.54312	addmul
+ 6.54003	muladd
+ 6.55101	muldiv
+ 6.55673	divmul
+10.00229	addmul_
+10.00206	muladd_
+10.21024	muldiv_
+10.21535	divmul_
+ 5.22861	muldivaba
+ 5.22722	muldivabb
+ 5.22687	divmulabb
+ 5.21775	addsubabb
+ 5.22498	addsubaba
+ 5.21900	subaddabb
+['__name__', '__doc__', '__package__', '__loader__', '__spec__', '__file__', '__cached__', '__builtins__', 'add', 'add_', 'sub', 'sub_', 'mul', 'mul_', 'div', 'div_', 'add_distl', 'add_distr', 'add_dist_comm', 'mm', 'addmm', 'mmmul', 'mulmm', 'addmul', 'muladd', 'muldiv', 'divmul', 'addmul_', 'muladd_', 'muldiv_', 'divmul_', 'muldivaba', 'muldivabb', 'divmulabb', 'addsubabb', 'addsubaba', 'subaddabb']
+ 4.99557	add
+ 4.99561	add_
+ 5.01539	sub
+ 4.99560	sub_
+ 5.01539	mul
+ 4.98857	mul_
+ 5.05500	div
+ 5.09613	div_
+15.04904	add_distl
+15.04694	add_distr
+ 0.75265	add_dist_comm
+ 1.81403	mm
+ 2.08308	addmm
+ 2.07933	mmmul
+ 2.08408	mulmm
+10.03009	addmul
+10.03079	muladd
+10.07000	muldiv
+10.06967	divmul
+10.00227	addmul_
+10.00246	muladd_
+10.21058	muldiv_
+10.21568	divmul_
+10.06377	muldivaba
+10.06493	muldivabb
+10.06622	divmulabb
+10.02603	addsubabb
+10.02556	addsubaba
+10.02795	subaddabb
+['__name__', '__doc__', '__package__', '__loader__', '__spec__', '__file__', '__cached__', '__builtins__', 'add', 'add_', 'sub', 'sub_', 'mul', 'mul_', 'div', 'div_', 'add_distl', 'add_distr', 'add_dist_comm', 'mm', 'addmm', 'mmmul', 'mulmm', 'addmul', 'muladd', 'muldiv', 'divmul', 'addmul_', 'muladd_', 'muldiv_', 'divmul_', 'muldivaba', 'muldivabb', 'divmulabb', 'addsubabb', 'addsubaba', 'subaddabb']
+ 4.99596	add
+ 4.97449	add_
+ 4.99550	sub
+ 4.97429	sub_
+ 4.99488	mul
+ 4.96757	mul_
+ 5.39390	div
+ 5.07472	div_
+ 6.47802	add_distl
+ 6.47937	add_distr
+ 0.29520	add_dist_comm
+ 1.80856	mm
+ 2.08069	addmm
+ 2.08135	mmmul
+ 2.08568	mulmm
+ 6.48180	addmul
+ 6.47381	muladd
+ 6.51278	muldiv
+ 6.78139	divmul
+10.00300	addmul_
+10.00310	muladd_
+10.21306	muldiv_
+10.21910	divmul_
+ 5.63114	muldivaba
+ 5.90066	muldivabb
+ 5.64235	divmulabb
+ 5.61794	addsubabb
+ 5.63868	addsubaba
+ 5.67721	subaddabb
