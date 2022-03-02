@@ -1,7 +1,7 @@
 import torch
 import argparse
 from tester import test_fn, test_fn_inplace
-from simple import fns, fns_script
+from simple import fns8 as fns, fns8_script as fns_script
 from inspect import signature
 
 torch.manual_seed(0)
@@ -18,7 +18,6 @@ parser.add_argument("--iter_n", type=int, default=50000)
 parser.add_argument("--warm", type=int, default=1000)
 parser.add_argument("--height", type=int, default=1280)
 parser.add_argument("--width", type=int, default=1280)
-parser.add_argument("--fn", default="")
 
 args = parser.parse_args()
 
@@ -47,10 +46,6 @@ print(list(fns.__dict__.keys()))
 
 def run_test():
     for fn_name in fns.__dict__.keys():
-        if not args.fn == '':
-            if fn_name != args.fn:
-                continue
-
         if fn_name.startswith("_") or fn_name == "torch":
             continue
 

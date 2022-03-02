@@ -57,22 +57,22 @@ def add_dist_comm(a, b, c):
 
 
 @torch.jit.script
-def mm(a, b):
+def x_mm(a, b):
     return a.mm(b)
 
 
 @torch.jit.script
-def addmm(a, b, c):
+def x_addmm(a, b, c):
     return a.addmm(b, c)
 
 
 @torch.jit.script
-def mmmul(a, b, c):
+def x_mmmul(a, b, c):
     return a.mm(b).mul(c)
 
 
 @torch.jit.script
-def mulmm(a, b, c):
+def x_mulmm(a, b, c):
     return a.mul(b).mm(c)
 
 

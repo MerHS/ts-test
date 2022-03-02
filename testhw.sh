@@ -1,0 +1,14 @@
+python hw_test.py --iter_n=1000
+python hw_test.py --iter_n=1000 --ts
+python hw_test.py --iter_n=1000 --ts_script
+python hw_test.py --iter_n=1000 --ts --fuse
+python hw_test.py --iter_n=1000 --ts_script --fuse
+python hw_test.py --iter_n=1000 --ts --nnc
+python hw_test.py --iter_n=1000 --ts --nnc --fuse
+python hw_test.py --iter_n=4000 --cuda
+python hw_test.py --iter_n=4000 --cuda --ts
+python hw_test.py --iter_n=4000 --cuda --ts --fuse
+python hw_test.py --iter_n=4000 --cuda --ts --nnc
+python hw_test.py --iter_n=4000 --cuda --ts --fuse --nnc
+python hw_test.py --iter_n=4000 --cuda --ts --nvfuse
+python hw_test.py --iter_n=4000 --cuda --nvfuse

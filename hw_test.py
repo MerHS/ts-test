@@ -1,7 +1,6 @@
 import torch
 import argparse
-from tester import test_fn, test_fn_inplace
-from simple import fns, fns_script
+from simple import hw_fns as fns
 from inspect import signature
 
 torch.manual_seed(0)
@@ -14,11 +13,8 @@ parser.add_argument("--fuse", action="store_true")
 parser.add_argument("--nnc", action="store_true")
 parser.add_argument("--nvfuse", action="store_true")
 parser.add_argument("--grad", action='store_true')
-parser.add_argument("--iter_n", type=int, default=50000)
+parser.add_argument("--iter_n", type=int, default=10000)
 parser.add_argument("--warm", type=int, default=1000)
-parser.add_argument("--height", type=int, default=1280)
-parser.add_argument("--width", type=int, default=1280)
-parser.add_argument("--fn", default="")
 
 args = parser.parse_args()
 
@@ -27,6 +23,7 @@ cuda = False
 torch._C._jit_set_texpr_fuser_enabled(False)
 
 if args.cuda:
+    iter_n *= 5
     cuda = True
     if not torch.cuda.is_available():
         print("UNSUPPORTED: CUDA is not available")
@@ -40,41 +37,41 @@ if args.nvfuse:
 
 
 device = "cuda" if args.cuda else "cpu"
-size = [args.height, args.width]
-tensors = [torch.rand(size, device=device) for _ in range(16)]
 
-print(list(fns.__dict__.keys()))
+tensor_pool = list()
+len_list = [80, 160, 320, 640, 1280, 2560]
+for height in len_list:
+    for width in len_list:
+        size = [height, width]
+        tensors = [torch.rand(size, device=device) for _ in range(16)]
+
+        tensor_pool.append((size, tensors))
+
+print(args)
 
 def run_test():
     for fn_name in fns.__dict__.keys():
-        if not args.fn == '':
-            if fn_name != args.fn:
+        print(fn_name)
+        for (hw, tensors) in tensor_pool:
+            if fn_name.startswith("_") or fn_name == "torch":
                 continue
 
-        if fn_name.startswith("_") or fn_name == "torch":
-            continue
+            fn = fns.__dict__[fn_name]
+            fn_sig = signature(fn)
+            param_len = len(fn_sig.parameters)
+            params = tensors[:param_len]
+            params[0] = params[0].clone()
 
-        fn = fns.__dict__[fn_name]
-        fn_sig = signature(fn)
-        param_len = len(fn_sig.parameters)
-        params = tensors[:param_len]
-        params[0] = params[0].clone()
+            n = iter_n
+            if fn_name.startswith("x_"):
+                n = iter_n // 20
 
-        if args.ts_script:
-            fn = fns_script.__dict__[fn_name]
+            run_time = test_fn(fn, args, params, n)
 
-        # if fn_name.endswith('_'):
-        #     run_time = test_fn_inplace(fn, args, tensors, iter_n)
-        # else:
-        #     run_time = test_fn(fn, args, tensors, iter_n)
+            print(f"{run_time:8.5f},", end='')
 
-        n = iter_n
-        if fn_name.startswith("x_"):
-            n = iter_n // 20
-
-        run_time = test_fn(fn, args, params, n)
-
-        print(f"{run_time:8.5f}\t{fn_name}", flush=True)
+            if hw[1] == len_list[len(len_list) - 1]:
+                print(fn_name, flush=True)
 
 if args.grad:
     with torch.enable_grad():

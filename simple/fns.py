@@ -42,19 +42,19 @@ def add_dist_comm(a, b, c):
     return a.mul(b) + c.mul(a)
 
 
-def mm(a, b):
+def x_mm(a, b):
     return a.mm(b)
 
 
-def addmm(a, b, c):
+def x_addmm(a, b, c):
     return a.addmm(b, c)
 
 
-def mmmul(a, b, c):
+def x_mmmul(a, b, c):
     return a.mm(b).mul(c)
 
 
-def mulmm(a, b, c):
+def x_mulmm(a, b, c):
     return a.mul(b).mm(c)
 
 

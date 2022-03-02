@@ -1,0 +1,14 @@
+python simple8_test.py --iter_n=2500
+python simple8_test.py --iter_n=2500 --ts
+python simple8_test.py --iter_n=2500 --ts_script
+python simple8_test.py --iter_n=2500 --ts --fuse
+python simple8_test.py --iter_n=2500 --ts_script --fuse
+python simple8_test.py --iter_n=2500 --ts --nnc
+python simple8_test.py --iter_n=2500 --ts --nnc --fuse
+python simple8_test.py --iter_n=10000 --cuda
+python simple8_test.py --iter_n=10000 --cuda --ts
+python simple8_test.py --iter_n=10000 --cuda --ts --fuse
+python simple8_test.py --iter_n=10000 --cuda --ts --nnc
+python simple8_test.py --iter_n=10000 --cuda --ts --fuse --nnc
+python simple8_test.py --iter_n=10000 --cuda --ts --nvfuse
+python simple8_test.py --iter_n=10000 --cuda --nvfuse
